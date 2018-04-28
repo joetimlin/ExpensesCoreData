@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B84ACF92094053900FF7E01 /* Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B84ACF72094053900FF7E01 /* Expense+CoreDataClass.swift */; };
+		6B84ACFA2094053900FF7E01 /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B84ACF82094053900FF7E01 /* Expense+CoreDataProperties.swift */; };
 		FE4382E61FD0B8FD000FACCD /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4382E51FD0B8FD000FACCD /* ExpensesViewController.swift */; };
 		FE4382E81FD0B917000FACCD /* SingleExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4382E71FD0B917000FACCD /* SingleExpenseViewController.swift */; };
 		FEEEA2CC1FD0B6A200D1F554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEEA2CB1FD0B6A200D1F554 /* AppDelegate.swift */; };
@@ -36,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B84ACF72094053900FF7E01 /* Expense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataClass.swift"; sourceTree = "<group>"; };
+		6B84ACF82094053900FF7E01 /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6B84ACFB20940D8D00FF7E01 /* Expenses.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Expenses.entitlements; sourceTree = "<group>"; };
 		FE4382E51FD0B8FD000FACCD /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
 		FE4382E71FD0B917000FACCD /* SingleExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleExpenseViewController.swift; sourceTree = "<group>"; };
 		FEEEA2C81FD0B6A200D1F554 /* Expenses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expenses.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -101,6 +106,9 @@
 		FEEEA2CA1FD0B6A200D1F554 /* Expenses */ = {
 			isa = PBXGroup;
 			children = (
+				6B84ACFB20940D8D00FF7E01 /* Expenses.entitlements */,
+				6B84ACF72094053900FF7E01 /* Expense+CoreDataClass.swift */,
+				6B84ACF82094053900FF7E01 /* Expense+CoreDataProperties.swift */,
 				FEEEA2CB1FD0B6A200D1F554 /* AppDelegate.swift */,
 				FE4382E51FD0B8FD000FACCD /* ExpensesViewController.swift */,
 				FE4382E71FD0B917000FACCD /* SingleExpenseViewController.swift */,
@@ -200,6 +208,11 @@
 					FEEEA2C71FD0B6A200D1F554 = {
 						CreatedOnToolsVersion = 9.1;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.iCloud = {
+								enabled = 1;
+							};
+						};
 					};
 					FEEEA2DE1FD0B6A200D1F554 = {
 						CreatedOnToolsVersion = 9.1;
@@ -267,6 +280,8 @@
 			files = (
 				FEEEA2D41FD0B6A200D1F554 /* Expenses.xcdatamodeld in Sources */,
 				FEEEA2CC1FD0B6A200D1F554 /* AppDelegate.swift in Sources */,
+				6B84ACFA2094053900FF7E01 /* Expense+CoreDataProperties.swift in Sources */,
+				6B84ACF92094053900FF7E01 /* Expense+CoreDataClass.swift in Sources */,
 				FE4382E61FD0B8FD000FACCD /* ExpensesViewController.swift in Sources */,
 				FE4382E81FD0B917000FACCD /* SingleExpenseViewController.swift in Sources */,
 			);
@@ -434,11 +449,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Expenses/Expenses.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LFN793RXSP;
 				INFOPLIST_FILE = Expenses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = online.techinnovator.Expenses;
+				PRODUCT_BUNDLE_IDENTIFIER = jhthx9.Expenses;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -448,11 +467,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Expenses/Expenses.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LFN793RXSP;
 				INFOPLIST_FILE = Expenses/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = online.techinnovator.Expenses;
+				PRODUCT_BUNDLE_IDENTIFIER = jhthx9.Expenses;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
